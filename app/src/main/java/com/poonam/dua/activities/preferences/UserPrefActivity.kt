@@ -12,20 +12,18 @@ import com.poonam.dua.databinding.ActivityMainBinding
 import com.poonam.dua.databinding.ActivityUserPrefBinding
 import com.poonam.dua.model.QuizGeneral
 import com.poonam.dua.viewmodels.QuestionViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-
+@AndroidEntryPoint
 class UserPrefActivity : BindingActivity<ActivityUserPrefBinding>(){
     private var position = 1
     private var maxPosition = 15
     private var job: Job? = null
 
-    @Inject
-    lateinit var viewModelFactory: ViewModelProvider.Factory
-    private val viewModel: QuestionViewModel by viewModels {
-        viewModelFactory
-    }
+
+    private val viewModel by viewModels<QuestionViewModel>()
 
 
     private lateinit var quizGeneralList: List<QuizGeneral>

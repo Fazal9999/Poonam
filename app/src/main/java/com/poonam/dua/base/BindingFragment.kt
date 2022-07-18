@@ -6,8 +6,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 import com.poonam.dua.utils.getFragmentBinding
-import dagger.android.support.DaggerFragment
-open class BindingFragment<VB : ViewBinding> : DaggerFragment() {
+ open class BindingFragment<VB : ViewBinding> : Fragment() {
     private var _binding: VB? = null
     val binding: VB
     get() = _binding

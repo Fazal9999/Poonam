@@ -4,20 +4,15 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.poonam.dua.api.UnSplashService
-import com.poonam.dua.data.ImagesDataSource
-import com.poonam.dua.model.QuizGeneral
+  import com.poonam.dua.model.QuizGeneral
 import com.poonam.dua.utils.LOAD_SIZE
+import dagger.hilt.android.scopes.ActivityRetainedScoped
 import javax.inject.Inject
 
-class Repository @Inject constructor(private val unSplashService: UnSplashService) {
+@ActivityRetainedScoped
+class Repository @Inject constructor() {
 
-    fun getImages(orderBy: String) = Pager(
-        config = PagingConfig(enablePlaceholders = false, pageSize = LOAD_SIZE),
-        pagingSourceFactory = {
-            ImagesDataSource(unSplashService, orderBy)
-        }
-    ).flow
+
 
 //    fun searchImage(query: String, orderBy: String) = Pager(
 //        config = PagingConfig(enablePlaceholders = false, pageSize = LOAD_SIZE),
