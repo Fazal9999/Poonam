@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff"
+    android:weightSum="1"
+ >
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userNameTextInputLayout"
+        style="@style/TextInputLayoutBoxColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/hint_email"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPersonName" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.poonam.dua.widgets.btn.CustomizableButton
+        android:id="@+id/btnTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cb_text="Customizable Button"
+        app:cb_useRippleEffect="true"
+        app:cb_rippleColor="@color/primaryDarkColor"
+        app:cb_rippleOpacity="1"
+        app:cb_elevation="4dp"
+        app:cb_backgroundColorNormal="#5758FF"
+        app:cb_backgroundColorPressed="@color/primaryDarkColor"
+        app:cb_borderRadiusNormal="30dp"/>
+
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+
+    <com.poonam.dua.widgets.btn.CustomizableButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cb_text="Customizable Button"
+        app:cb_useRippleEffect="true"
+        app:cb_rippleColor="#ffffff"
+        app:cb_rippleOpacity="0.5"
+        app:cb_elevation="10dp"
+        app:cb_backgroundColorNormal="#E54C65"
+        app:cb_borderRadiusNormal="20dp"/>
+
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+
+    <com.poonam.dua.widgets.btn.CustomizableButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cb_text="Customizable Button"
+        app:cb_textColorNormal="#8715FF"
+        app:cb_useRippleEffect="true"
+        app:cb_backgroundOpacityNormal="0"
+        app:cb_rippleColor="#8715FF"
+        app:cb_borderColorNormal="#8715FF"
+        app:cb_borderThicknessNormal="2dp"
+        app:cb_borderRadiusNormal="10dp"/>
+
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+
+    <com.poonam.dua.widgets.btn.CustomizableButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cb_text="Customizable Button"
+        app:cb_enabled="false"
+        app:cb_useRippleEffect="true"
+        app:cb_rippleColor="#ffffff"
+        app:cb_rippleOpacity="0.5"
+        app:cb_backgroundColorNormal="#E54C65"
+        app:cb_borderRadiusNormal="10dp"/>
+
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+
+    <com.poonam.dua.widgets.btn.CustomizableButton
+        android:id="@+id/customizableButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

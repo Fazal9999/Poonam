@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="getStarted"
+            type="com.poonam.dua.activities.inter.clicklistner.GetStarted" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        tools:context=".fragments.auth.FragmentAuth">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:src="@mipmap/ic_launcher_foreground"
+            android:layout_marginVertical="@dimen/_40sdp"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/imgMian"
+            android:layout_height="@dimen/_300sdp">
+
+        </com.google.android.material.imageview.ShapeableImageView>
+
+
+
+
+        <com.poonam.dua.widgets.btn.CustomizableButton
+            android:id="@+id/btnStart"
+            app:layout_constraintBottom_toTopOf="@id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cb_text="Get Started"
+            android:onClick="@{getStarted::getStarted}"
+            app:cb_useRippleEffect="true"
+            app:cb_rippleColor="@color/green_200"
+            app:cb_rippleOpacity="1"
+            app:cb_elevation="4dp"
+            app:cb_textColorNormal="@color/white"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            app:cb_backgroundColorNormal="@color/primaryColor"
+            app:cb_backgroundColorPressed="@color/green_200"
+            app:cb_borderRadiusNormal="30dp" />
+
+
+        <com.poonam.dua.widgets.btn.CustomizableButton
+            android:id="@+id/btnLogin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            app:cb_text="Already Have an Account"
+            app:cb_useRippleEffect="true"
+            android:onClick="@{getStarted::getLogin}"
+            app:cb_rippleColor="@color/primaryColor"
+            app:cb_rippleOpacity="1"
+            app:cb_elevation="4dp"
+            app:cb_textColorNormal="@color/white"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            app:cb_backgroundColorNormal="@color/green_200"
+            app:cb_backgroundColorPressed="@color/primaryColor"
+            app:cb_borderRadiusNormal="30dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

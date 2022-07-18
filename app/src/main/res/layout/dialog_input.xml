@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+<import type="android.view.View"/>
+
+        <variable
+            name="forgotOk"
+            type="com.poonam.dua.activities.inter.clicklistner.Forgot" />
+    </data>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+             android:id="@+id/customAlertTitleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/space_16">
+
+            <ImageView
+                android:id="@+id/customAlertIconImageView"
+                android:layout_width="@dimen/space_52"
+                android:layout_height="@dimen/space_52"
+                android:layout_gravity="center"
+                android:contentDescription="@string/no_image"
+                app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/space_16"
+            android:paddingHorizontal="@dimen/space_16">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailText"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                app:boxBackgroundColor="@color/grey_3"
+                app:hintEnabled="false"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                app:helperTextTextAppearance="@style/HelperTextAppearance"
+                app:boxStrokeColor="@color/primaryDarkColor"
+                app:errorTextAppearance="@style/ErrorTextAppearance"
+                android:theme="@style/EditTextThemeOverlay">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:hint="@string/hint_email"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textColorHighlight="@color/textColorHighlight"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/space_16"
+            android:paddingHorizontal="@dimen/space_16">
+
+            <Button
+                android:onClick="@{forgotOk::forgotOk}"
+                android:id="@+id/customAlertPositiveButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/green_50"
+                android:fontFamily="@font/adamina"
+                android:text="@string/ok"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

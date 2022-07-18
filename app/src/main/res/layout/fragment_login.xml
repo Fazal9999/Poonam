@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="goBack"
+            type="com.poonam.dua.activities.inter.clicklistner.GoBack" />
+        <variable
+            name="auth"
+            type="com.poonam.dua.activities.inter.clicklistner.Auth" />
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.login.LoginFragment">
+
+        <include
+
+            layout="@layout/header"
+            android:id="@+id/header"
+             />
+         <include
+             layout="@layout/logo"
+            android:id="@+id/logo_merge"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            app:boxBackgroundColor="@color/grey_3"
+            app:hintEnabled="false"
+            app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+            app:boxCornerRadiusTopStart="@dimen/_5sdp"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:helperTextTextAppearance="@style/HelperTextAppearance"
+            app:boxStrokeColor="@color/primaryDarkColor"
+            app:errorTextAppearance="@style/ErrorTextAppearance"
+            android:theme="@style/EditTextThemeOverlay"
+               >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_name"
+
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:hint="@string/hint_email"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColorHighlight="@color/textColorHighlight"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordText"
+            app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+            app:boxCornerRadiusTopStart="@dimen/_5sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            app:boxBackgroundColor="@color/grey_3"
+            app:hintEnabled="false"
+
+             android:layout_marginHorizontal="@dimen/_20sdp"
+            app:helperTextTextAppearance="@style/HelperTextAppearance"
+            app:boxStrokeColor="@color/primaryDarkColor"
+
+            app:errorTextAppearance="@style/ErrorTextAppearance"
+            android:theme="@style/EditTextThemeOverlay"
+            app:passwordToggleEnabled="true"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:hint="@string/hint_password"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColorHighlight="@color/textColorHighlight"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:text="@string/forgot_password"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/textColor"
+            android:layout_gravity="end"
+            android:onClick="@{auth::Forgot}"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+             />
+
+
+        <com.poonam.dua.widgets.btn.CustomizableButton
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cb_text="Login"
+            app:cb_useRippleEffect="true"
+            app:cb_rippleColor="@color/green_200"
+            app:cb_rippleOpacity="1"
+            app:cb_elevation="4dp"
+            app:cb_textColorNormal="@color/white"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            app:cb_backgroundColorNormal="@color/primaryColor"
+            app:cb_backgroundColorPressed="@color/green_200"
+            app:cb_borderRadiusNormal="30dp" />
+
+    </LinearLayout>
+</layout>

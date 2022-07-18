@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "440644992049",
+    "project_id": "poonam-4631d",
+    "storage_bucket": "poonam-4631d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440644992049:android:0152d916bd925c33f1e910",
+        "android_client_info": {
+          "package_name": "com.poonam.dua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440644992049-0c4ptaimvuoq1rpanrad5lasb8gm32b8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFwM-SwtKVxpjcmy50bx4EStt_PbNmauU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440644992049-0c4ptaimvuoq1rpanrad5lasb8gm32b8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
