@@ -13,7 +13,7 @@ object Questions {
 
     private val json = "[\n" +
             "  {\n" +
-            "    \"question\":\"Lorem ipsum adipiscing elit.  dolor sit amet, adipiscing elit.  consectetur adipiscing elit. Lorem ipsum adipiscing elit.  dolor sit amet, adipiscing elit.  consectetur adipiscing elit. \",\n" +
+            "    \"question\":\"Gender\",\n" +
             "    \"answer1\":\"Lorem ipsum\",\n" +
             "    \"answer2\":\"Curabitur molestie\",\n" +
             "    \"answer3\":\"Etiam convallis\",\n" +
@@ -23,7 +23,7 @@ object Questions {
             "    \"image\":\"gallery_bird_6\"\n" +
             "  },\n" +
             "  {\n" +
-            "    \"question\":\"Morbi arcu sapien, pellentesque at consequat facilisis, ullamcorper ut quam. Praesent eget libero in nisi iaculis interdum. In eu ex mauris. Etiam vitae justo sed lorem consectetur viverra vitae eu velit. Donec vitae mi tellus.\",\n" +
+            "    \"question\":\"WEIGHT\",\n" +
             "    \"answer1\":\"Etiam non\",\n" +
             "    \"answer2\":\"Ut pretium\",\n" +
             "    \"answer3\":\"Sed fringilla\",\n" +
@@ -33,7 +33,7 @@ object Questions {
             "    \"image\":\"gallery_tiger_3\"\n" +
             "  },\n" +
             "  {\n" +
-            "    \"question\":\"Praesent justo turpis, placerat vitae lacus et, dignissim viverra est. Aliquam efficitur neque sit amet sapien congue egestas. Nulla quis mauris a risus lobortis blandit. \",\n" +
+            "    \"question\":\"AGE \",\n" +
             "    \"answer1\":\"Cras maximus\",\n" +
             "    \"answer2\":\"Vivamus hendrerit\",\n" +
             "    \"answer3\":\"Phasellus\",\n" +
@@ -43,7 +43,7 @@ object Questions {
             "    \"image\":\"dir_cat_3\"\n" +
             "  },\n" +
             "  {\n" +
-            "    \"question\":\"Phasellus felis elit, condimentum eu felis sit amet, tincidunt congue erat. Praesent ipsum mi, aliquam at erat nec, aliquam ultrices orci. Curabitur maximus lobortis tincidunt.\",\n" +
+            "    \"question\":\"HEIGHT\",\n" +
             "    \"answer1\":\"Lorem ipsum\",\n" +
             "    \"answer2\":\"Curabitur molestie\",\n" +
             "    \"answer3\":\"Etiam convallis\",\n" +
@@ -53,7 +53,7 @@ object Questions {
             "    \"image\":\"cafe4\"\n" +
             "  },\n" +
             "  {\n" +
-            "    \"question\":\"Vestibulum sit amet tristique turpis, vel rhoncus purus. Aliquam erat volutpat. Suspendisse feugiat mi sed arcu pellentesque, ac accumsan neque tincidunt. Sed eget diam eget felis iaculis gravida eget.\",\n" +
+            "    \"question\":\"AGE\",\n" +
             "    \"answer1\":\"Etiam non\",\n" +
             "    \"answer2\":\"Ut pretium\",\n" +
             "    \"answer3\":\"Sed fringilla\",\n" +

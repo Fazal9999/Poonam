@@ -352,4 +352,13 @@
 <!--textinput edittext-->
     <color name="textColorHighlight">#4DD81B60</color>
      <color name="purpleAlpha15">#26673AB7</color>
- </resources>
+
+    <!-- Text -->
+    <color name="colorText">@color/md_grey_800</color>
+    <color name="colorTextLight">@color/md_grey_600</color>
+    <color name="colorTextDisabled">#9E9E9E</color>
+    <color name="colorTextError">#B00020</color>
+    <!-- Line -->
+    <color name="colorLine">#E0E0E0</color>
+
+</resources>
