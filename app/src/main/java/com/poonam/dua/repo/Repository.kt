@@ -12,8 +12,6 @@ import javax.inject.Inject
 @ActivityRetainedScoped
 class Repository @Inject constructor() {
 
-
-
 //    fun searchImage(query: String, orderBy: String) = Pager(
 //        config = PagingConfig(enablePlaceholders = false, pageSize = LOAD_SIZE),
 //        pagingSourceFactory = {
