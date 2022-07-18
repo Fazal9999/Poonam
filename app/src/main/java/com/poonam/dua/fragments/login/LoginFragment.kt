@@ -20,11 +20,9 @@ class LoginFragment : BindingFragment<FragmentLoginBinding>(), Auth,GoBack {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
-
         val header:HeaderBinding=binding.header
-        header.goBack=this
+          header.goBack=this
           binding.auth=this
-
     }
 
     override fun Login(view: View) {
@@ -32,11 +30,11 @@ class LoginFragment : BindingFragment<FragmentLoginBinding>(), Auth,GoBack {
     }
 
     override fun Forgot(view: View) {
-val action=LoginFragmentDirections.actionLoginFragmentToForgotDialog()
+        val action=LoginFragmentDirections.actionLoginFragmentToForgotDialog()
         navController.navigate(action)
     }
 
     override fun goBack(view: View) {
- navController.popBackStack()
+             navController.popBackStack()
     }
 }

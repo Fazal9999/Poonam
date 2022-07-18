@@ -10,9 +10,12 @@
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/drawable/ic_sp_icon.xml" value="0.188" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/drawable/splash_bg.xml" value="0.14" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/activity_auth.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/activity_dashboard.xml" value="0.18115942028985507" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/activity_user_pref.xml" value="0.178125" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/buttons.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/dialog_input.xml" value="0.18115942028985507" />
+        <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/dialog_loading.xml" value="0.22445255474452555" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/edittext.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/fragment_auth.xml" value="0.12" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/fragment_login.xml" value="0.17" />

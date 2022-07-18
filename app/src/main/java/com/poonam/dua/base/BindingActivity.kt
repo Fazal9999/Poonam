@@ -6,8 +6,9 @@ import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
 import com.poonam.dua.utils.getBinding
+import dagger.android.support.DaggerAppCompatActivity
 
-open class BindingActivity<VB : ViewBinding> : AppCompatActivity() {
+open class BindingActivity<VB : ViewBinding> : DaggerAppCompatActivity() {
     lateinit var binding: VB
     override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
