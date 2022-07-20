@@ -4,35 +4,35 @@
     android:layout_height="wrap_content"
     android:paddingStart="8dp"
     android:paddingEnd="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
     android:background="@color/grey_3"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
         android:id="@+id/image_icon"
-        android:contentDescription="@string/app_name"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:layout_marginTop="1.5dp"
-        android:padding="8dp"
         android:layout_marginEnd="20dp"
-         android:layout_centerVertical="true"
-        android:src="@drawable/ic_placeholder"/>
+        android:contentDescription="@string/app_name"
+        android:padding="8dp"
+        android:src="@drawable/ic_placeholder" />
 
     <TextView
-        android:layout_alignParentTop="true"
-        android:layout_marginVertical="@dimen/_2sdp"
         android:id="@+id/text_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:layout_toStartOf="@id/switch_state"
         android:layout_toEndOf="@id/image_icon"
         android:fontFamily="@font/roboto_medium"
         android:paddingBottom="3dp"
         android:text="@string/app_name"
-        android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_12ssp" />
 
 
     <com.google.android.material.switchmaterial.SwitchMaterial
@@ -49,17 +49,17 @@
 
     <ImageView
         android:id="@+id/image_open"
-        android:visibility="visible"
-        android:contentDescription="@null"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="1.5dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="8dp"
-        android:padding="8dp"
-        app:tint="@color/green_50"
-        android:layout_centerVertical="true"
+        android:layout_width="@dimen/_24ssp"
+        android:layout_height="@dimen/_24ssp"
         android:layout_alignParentEnd="true"
-        android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+         android:contentDescription="@null"
+        android:padding="8dp"
+        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:visibility="visible"
+        app:tint="@color/green_400" />
 
 </RelativeLayout>

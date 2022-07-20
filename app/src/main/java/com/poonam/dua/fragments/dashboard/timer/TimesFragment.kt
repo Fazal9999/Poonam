@@ -9,8 +9,12 @@ import com.poonam.dua.R
 import com.poonam.dua.base.BindingFragment
 import com.poonam.dua.databinding.FragmentStatisticsBinding
 import com.poonam.dua.databinding.FragmentTimesBinding
+import com.poonam.dua.fragments.dashboard.statistics.StatisticsFragment
 
 
 class TimesFragment : BindingFragment<FragmentTimesBinding>()  {
-
+    companion object {
+        val TAG: String = TimesFragment::class.java.simpleName
+        fun newInstance() = TimesFragment()
+    }
 }

@@ -14,9 +14,7 @@ import com.google.android.material.switchmaterial.SwitchMaterial;
 import com.poonam.dua.R;
 import com.poonam.dua.utils.Utils;
 
-
 public class SettingsView extends RelativeLayout {
-
     Context context;
     AttributeSet attrs;
     int styleAttr;
@@ -64,9 +62,9 @@ public class SettingsView extends RelativeLayout {
         textTitle.setText(arr.getText(R.styleable.SettingsView_settings_title));
      //   textInfo.setText(arr.getText(R.styleable.SettingsView_settings_info));
         imageIcon.setImageDrawable(arr.getDrawable(R.styleable.SettingsView_settings_icon));
-        imageIcon.setImageTintList(ColorStateList.valueOf(arr.getColor(R.styleable.SettingsView_settings_icon_tint, Utils.INSTANCE.getAttrColor(context,R.attr.colorIcon))));
+       // imageIcon.setImageTintList(ColorStateList.valueOf(arr.getColor(R.styleable.SettingsView_settings_icon_tint, Utils.INSTANCE.getAttrColor(context,R.attr.colorIcon))));
        //switchState.setVisibility(arr.getInteger(R.styleable.SettingsView_settings_switch_visibility, View.VISIBLE));
-        imageOpen.setVisibility(arr.getInteger(R.styleable.SettingsView_settings_open_visibility, View.GONE));
+        imageOpen.setVisibility(arr.getInteger(R.styleable.SettingsView_settings_open_visibility, View.VISIBLE));
     }
 
     public void setIconTint(int color) {

@@ -21,6 +21,13 @@
 
 
             />
+        <action
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            android:id="@+id/action_fragmentAuth_to_userPrefActivity"
+            app:destination="@id/userPrefActivity" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -48,4 +55,10 @@
         android:id="@+id/forgot_dialog"
         android:name="com.poonam.dua.dialog.ForgotDialog"
         tools:layout="@layout/dialog_input" />
+    <activity
+        android:id="@+id/userPrefActivity"
+        android:name="com.poonam.dua.activities.preferences.UserPrefActivity"
+        android:label="UserPrefActivity"
+        tools:layout="@layout/activity_user_pref"
+        />
 </navigation>

@@ -12,5 +12,8 @@ import com.poonam.dua.databinding.FragmentChatBinding
 
 
 class ChatFragment : BindingFragment<FragmentChatBinding>() {
-
+    companion object {
+        val TAG: String = ChatFragment::class.java.simpleName
+        fun newInstance() = ChatFragment()
+    }
 }

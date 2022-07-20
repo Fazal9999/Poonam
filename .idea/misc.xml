@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/drawable/bg_gradient.xml" value="0.188" />
+        <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.1905" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/drawable/ic_chat.xml" value="0.1905" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/drawable/ic_dashboard.xml" value="0.1905" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/drawable/ic_leaves.xml" value="0.1495" />
@@ -25,8 +26,10 @@
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/edittext.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/feature_stepper_quiz_stepper_fragment.xml" value="0.2" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/fragment_auth.xml" value="0.12" />
+        <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/fragment_dashboard.xml" value="0.15391192817443353" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/fragment_login.xml" value="0.17" />
-        <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/fragment_profile.xml" value="0.16" />
+        <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/fragment_profile.xml" value="0.18" />
+        <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/fragment_profile_info.xml" value="0.15391192817443353" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/header.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/item_settings.xml" value="0.25" />
         <entry key="..\:/Users/Fazal/PoonamDua/app/src/main/res/layout/logo.xml" value="0.1793478260869565" />

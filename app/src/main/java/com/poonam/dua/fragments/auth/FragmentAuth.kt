@@ -26,13 +26,8 @@ import com.poonam.dua.databinding.FragmentAuthBinding
     }
 
     override fun getStarted(view: View) {
-        val intent = Intent(requireActivity(), UserPrefActivity::class.java)
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-        startActivity(
-            intent,
-            ActivityOptions.makeSceneTransitionAnimation(requireActivity()).toBundle()
-        )
-        requireActivity().finish()
+      val action=FragmentAuthDirections.actionFragmentAuthToUserPrefActivity()
+        navController.navigate(action)
     }
 
     override fun getLogin(view: View) {

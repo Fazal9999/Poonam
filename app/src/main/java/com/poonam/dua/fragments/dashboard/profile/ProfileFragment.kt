@@ -11,10 +11,15 @@ import com.poonam.dua.R
 import com.poonam.dua.base.BindingFragment
 import com.poonam.dua.databinding.FragmentChatBinding
 import com.poonam.dua.databinding.FragmentProfileBinding
+import com.poonam.dua.fragments.dashboard.dashboard.DashboardFragment
 
 
 class ProfileFragment : BindingFragment<FragmentProfileBinding>()
  {
+  companion object {
+   val TAG: String = ProfileFragment::class.java.simpleName
+   fun newInstance() = ProfileFragment()
+  }
 
   lateinit var navController: NavController
 

@@ -4,12 +4,22 @@ import android.app.Activity
 import android.content.Intent
 import android.net.ConnectivityManager
 import android.os.Build
+import android.util.SparseArray
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+import androidx.fragment.app.commit
+import androidx.lifecycle.LiveData
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.viewbinding.ViewBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.snackbar.Snackbar
+import com.poonam.dua.R
 import com.poonam.dua.base.*
 import java.lang.reflect.ParameterizedType
 @Override
@@ -158,5 +168,6 @@ fun Activity.isConnected(): Boolean {
     }
     return status
 }
+
 
 

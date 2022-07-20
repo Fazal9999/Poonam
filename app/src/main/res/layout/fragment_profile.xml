@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".fragments.dashboard.profile.ProfileFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -28,13 +29,13 @@
          android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="30dp" />
+        app:layout_constraintGuide_begin="@dimen/_15sdp" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineRight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="30dp"
+        app:layout_constraintGuide_end="@dimen/_15sdp"
        />
 
     <ImageView
@@ -60,6 +61,7 @@
         tools:srcCompat="@drawable/ic_placeholder" />
 
     <ImageView
+        android:contentDescription="@null"
         android:id="@+id/imageView46"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -103,11 +105,13 @@
             <com.poonam.dua.widgets.profile.SettingsView
                 android:id="@+id/settings_profile"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                app:settings_icon_tint="@color/green_200"
                 app:settings_title="@string/profile"
+
                 app:settings_icon="@drawable/ic_placeholder"
-                app:settings_switch_visibility="8"/>
+        />
 
             <View
                 android:layout_width="0dp"
@@ -117,7 +121,7 @@
             <com.poonam.dua.widgets.profile.SettingsView
                 android:id="@+id/settings_fasting"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:settings_title="@string/profile"
                 app:settings_icon="@drawable/ic_placeholder"
@@ -129,7 +133,7 @@
             <com.poonam.dua.widgets.profile.SettingsView
                 android:id="@+id/settings_hydration"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:settings_title="@string/profile"
                 app:settings_icon="@drawable/ic_placeholder"
@@ -141,7 +145,7 @@
             <com.poonam.dua.widgets.profile.SettingsView
                 android:id="@+id/settings_consumed"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:settings_title="@string/profile"
                 app:settings_icon="@drawable/ic_placeholder"
@@ -155,7 +159,7 @@
             <com.poonam.dua.widgets.profile.SettingsView
                 android:id="@+id/settings_symptoms"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:settings_title="@string/profile"
                 app:settings_icon="@drawable/ic_placeholder"
@@ -169,7 +173,7 @@
             <com.poonam.dua.widgets.profile.SettingsView
                 android:id="@+id/settings_compulsary"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:settings_title="@string/profile"
                 app:settings_icon="@drawable/ic_placeholder"
