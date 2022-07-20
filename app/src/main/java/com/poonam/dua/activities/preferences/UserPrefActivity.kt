@@ -1,11 +1,14 @@
 package com.poonam.dua.activities.preferences
-
+import android.app.ActivityOptions
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.poonam.dua.R
+import com.poonam.dua.activities.dashboard.DashboardActivity
+import com.poonam.dua.activities.main.MainActivity
 import com.poonam.dua.base.BindingActivity
 import com.poonam.dua.databinding.ActivityUserPrefBinding
 import com.poonam.dua.fragments.quiz.FeatureStepperQuizStepperFragment
@@ -14,14 +17,11 @@ import com.poonam.dua.viewmodels.QuestionViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
-
 @AndroidEntryPoint
 class UserPrefActivity : BindingActivity<ActivityUserPrefBinding>(), FeatureStepperQuizStepperFragment.OnItemClickListener{
     private var position = 1
     private var maxPosition = 15
     private var job: Job? = null
-
-
     private val viewModel by viewModels<QuestionViewModel>()
 
 
@@ -83,7 +83,15 @@ class UserPrefActivity : BindingActivity<ActivityUserPrefBinding>(), FeatureStep
             updatePositionTextView()
             setupFragment(FeatureStepperQuizStepperFragment.newInstance(quizGeneralList[this.position - 1], this.position - 1))
         } else {
-            Toast.makeText(this, "No More Step.", Toast.LENGTH_SHORT).show()
+           // Toast.makeText(this, "No More Step.", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this@UserPrefActivity, DashboardActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(
+                intent,
+                ActivityOptions.makeSceneTransitionAnimation(this).toBundle()
+            )
+            finish()
         }
 
 
