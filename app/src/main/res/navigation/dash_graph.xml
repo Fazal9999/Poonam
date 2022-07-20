@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/dash_graph.xml">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dash_graph.xml"
+    app:startDestination="@id/dashboardFragment">
 
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.poonam.dua.fragments.dashboard.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.poonam.dua.fragments.dashboard.chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.poonam.dua.fragments.dashboard.statistics.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+    <fragment
+        android:id="@+id/timesFragment"
+        android:name="com.poonam.dua.fragments.dashboard.timer.TimesFragment"
+        android:label="fragment_times"
+        tools:layout="@layout/fragment_times" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.poonam.dua.fragments.dashboard.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
 </navigation>

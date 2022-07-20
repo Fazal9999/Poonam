@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/timesFragment"
+        android:icon="@drawable/ic_time"
+        android:title="@string/time" />
+
+    <item
+        android:id="@+id/statisticsFragment"
+        android:icon="@drawable/ic_statistics"
+        android:title="@string/statistics" />
+
+    <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/chat" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_user_profile"
+        android:title="@string/profile" />
 </menu>
