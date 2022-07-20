@@ -1,4 +1,4 @@
-package com.poonam.dua.activities.inter.clicklistner
+package com.poonam.dua.inter.clicklistner
 
 import android.view.View
 

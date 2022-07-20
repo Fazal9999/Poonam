@@ -117,7 +117,7 @@ class FirebaseRepositoryImpl @Inject constructor(
      */
     override fun loadUserData() {
         getCurrentUserId()?.let { id ->
-            var user: User? = null
+            var user: User?
             userCollectionReference
                 .whereEqualTo("userId", id)
                 .addSnapshotListener { value, _ ->

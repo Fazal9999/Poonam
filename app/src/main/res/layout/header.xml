@@ -6,7 +6,7 @@
 <import type="android.view.View"/>
         <variable
             name="goBack"
-            type="com.poonam.dua.activities.inter.clicklistner.GoBack" />
+            type="com.poonam.dua.inter.clicklistner.GoBack" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

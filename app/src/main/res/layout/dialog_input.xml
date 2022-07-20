@@ -7,7 +7,7 @@
 
         <variable
             name="forgotOk"
-            type="com.poonam.dua.activities.inter.clicklistner.Forgot" />
+            type="com.poonam.dua.inter.clicklistner.Forgot" />
     </data>
 
     <LinearLayout

@@ -17,4 +17,7 @@
     <string name="time">Time</string>
     <string name="statistics">Statistics</string>
     <string name="chat">Chat</string>
+    <string name="answer">answer</string>
+    <string name="question">Question</string>
+    <string name="_10_jan_2018_08_55">10 jan 2018 08:55</string>
 </resources>

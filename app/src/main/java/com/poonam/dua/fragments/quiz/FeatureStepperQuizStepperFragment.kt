@@ -43,7 +43,7 @@ class FeatureStepperQuizStepperFragment : Fragment() {
         answer5 = if (arguments != null) arguments?.getString("ANSWER5") else ""
         image = if (arguments != null) arguments?.getString("IMAGE") else ""
         position = if (arguments != null) arguments!!.getInt("POSITION") else 0
-        correctAnswer = Integer.parseInt(if (arguments != null) arguments!!.getString("CORRECT_ANSWER") else "0")
+        correctAnswer = Integer.parseInt((if (arguments != null) arguments!!.getString("CORRECT_ANSWER") else "0")!!)
         selectedAnswer = if (arguments != null) arguments!!.getInt("SELECTED_ANSWER") else 0
 
         try {
@@ -61,7 +61,7 @@ class FeatureStepperQuizStepperFragment : Fragment() {
 
        // val quizImageView = view.findViewById<ImageView>(R.id.quizImageView)
         if (context != null) {
-            val id = Utils.getDrawableInt(context, image!!)
+           // val id = Utils.getDrawableInt(context, image!!)
            // Utils.setImageToImageView(context!!, quizImageView, id)
         }
 

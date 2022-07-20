@@ -15,18 +15,7 @@ class DashboardActivity: BindingActivity<ActivityDashboardBinding>()
 
 {
     lateinit var navController: NavController
-    private val navSectionsStateKeeper by lazy {
-        NavigationBottomBarSectionsStateKeeperWorkaround(
-            activity = this,
-            navHostContainerID = R.id.main_nav_container,
-            navGraphIds = listOf(
-                R.navigation.dash_graph
-//                R.navigation.nav_section2,
-//                R.navigation.nav_section3
-            ),
-            bottomNavigationViewID = R.id.bottom_navigation
-        )
-    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +29,7 @@ class DashboardActivity: BindingActivity<ActivityDashboardBinding>()
 //            setDisplayShowHomeEnabled(true)
 //        }
         setupBottomNavigation()
-        navSectionsStateKeeper.onCreate(savedInstanceState)
+       // navSectionsStateKeeper.onCreate(savedInstanceState)
 
 //        binding.bottomNavigation.setOnItemSelectedListener { item: MenuItem ->
 //
@@ -60,18 +49,7 @@ class DashboardActivity: BindingActivity<ActivityDashboardBinding>()
         return super.onNavigateUp()
 
     }
-    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-        super.onRestoreInstanceState(savedInstanceState)
-        navSectionsStateKeeper.onRestoreInstanceState(savedInstanceState)
-    }
 
-    override fun onSupportNavigateUp() =
-        navSectionsStateKeeper.onSupportNavigateUp()
-
-    override fun onBackPressed() {
-        if (!navSectionsStateKeeper.onSupportNavigateUp())
-            super.onBackPressed()
-    }
     private fun setupBottomNavigation() {
         val navHostFragment =
             supportFragmentManager.findFragmentById( R.id.fragment_container_view) as NavHostFragment?
@@ -86,7 +64,7 @@ class DashboardActivity: BindingActivity<ActivityDashboardBinding>()
     }
 
     private fun initDestinationListener() {
-        navController.addOnDestinationChangedListener { controller: NavController?, destination: NavDestination, bundle: Bundle? ->
+        navController.addOnDestinationChangedListener { _: NavController?, destination: NavDestination, _: Bundle? ->
             when (destination.id) {
                 R.id.dashboardFragment -> {
                     showBottomSheet()

@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.view.WindowManager
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import com.poonam.dua.activities.inter.clicklistner.Forgot
+import com.poonam.dua.inter.clicklistner.Forgot
 import com.poonam.dua.base.BindingDialog
 import com.poonam.dua.databinding.DialogInputBinding
 
