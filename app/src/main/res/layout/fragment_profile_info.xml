@@ -11,15 +11,61 @@
         android:id="@+id/header"
         />
 
-    <androidx.recyclerview.widget.RecyclerView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        tools:listitem="@layout/item_info"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        >
+        <com.poonam.dua.widgets.profile.InfoView
+            android:layout_width="match_parent"
+            app:info_question="name"
+            android:layout_height="53dp"/>
+        <com.poonam.dua.widgets.profile.InfoView
+            android:layout_width="match_parent"
+            app:info_question="name"
+            android:layout_height="53dp"/>
+        <com.poonam.dua.widgets.profile.InfoView
+            android:layout_width="match_parent"
+            app:info_question="name"
+            android:layout_height="53dp"/>
+        <com.poonam.dua.widgets.profile.InfoView
+            android:layout_width="match_parent"
+            app:info_question="name"
+            android:layout_height="53dp"/>
+        <com.poonam.dua.widgets.profile.InfoView
+            android:layout_width="match_parent"
+            app:info_question="name"
+            android:layout_height="53dp"/>
+        <com.poonam.dua.widgets.profile.InfoView
+            android:layout_width="match_parent"
+            app:info_question="name"
+            android:layout_height="53dp"/>
+        <com.poonam.dua.widgets.profile.InfoView
+            android:layout_width="match_parent"
+            app:info_question="name"
+            android:layout_height="53dp"/>
+        <com.poonam.dua.widgets.profile.InfoView
+            android:layout_width="match_parent"
+            app:info_question="name"
+            android:layout_height="53dp"/>
+        <com.poonam.dua.widgets.profile.InfoView
+            android:layout_width="match_parent"
+            app:info_question="name"
+            android:layout_height="53dp"/>
+        <com.poonam.dua.widgets.profile.InfoView
+            android:layout_width="match_parent"
+            app:info_question="name"
+            android:layout_height="53dp"/>
+        <com.poonam.dua.widgets.profile.InfoView
+            android:layout_width="match_parent"
+            app:info_question="name"
+            android:layout_height="53dp"/>
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
